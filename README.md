@@ -11,7 +11,7 @@ The language grew over time beyond what it was ever conceived of.  Very easy to 
 The _Gang of four Book_, "Design Patterns".
 
 | Problem | Solutions|
-| ------- | -------- | 
+| ------- | -------- |
 | Design service Layer | Module Pattern
 | Overly Complicated Object Interfaces | Facade Pattern (JQuery) |
 | Visibility Into State Changes | Observer Pattern |
@@ -92,7 +92,7 @@ The `new` keyword:
 * implicitly returns `this`
 
 ```javascript
-// Creates objects from functions. 'New' keyword 
+// Creates objects from functions. 'New' keyword
 function ObjectName(p1, p2) {
   this.p1 = p1;
   this.p2 = p2;
@@ -109,7 +109,7 @@ Drawback - recreated for each instance (use prototype)
 * Classes (EcmaScript2015)
 
 ```javascript
-// Creates objects from functions. 'New' keyword 
+// Creates objects from functions. 'New' keyword
 class Class {
   constructor(name) {
     this.name = name;
@@ -122,3 +122,23 @@ class Class {
 
 > Hint: use Babel to trasnpile to whatever...
 > See `http://plnkr.co/edit/LQepAH` for an exmaple of basic angular app
+
+### Module Pattern
+
+Simple way to encapsulate similar methods. Creates a **toolbox** of functions to use. At its core, this is just an Object Lteral.
+
+```Javascript
+var Module = function () {
+  var privateVar = 'I am private...';
+  return {
+    method: function () {
+      ...
+    },
+    nextMethod: function () {
+      ...
+    }
+  }
+}
+```
+
+Used for things that you only need one of.
