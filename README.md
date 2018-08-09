@@ -141,4 +141,4 @@ var Module = function () {
 }
 ```
 
-Used for things that you only need one of.
+Used for things that you only need one of. Also see *revealing module* pattern, where you only return a list of method names, but the mthods are defined in the module seperately
