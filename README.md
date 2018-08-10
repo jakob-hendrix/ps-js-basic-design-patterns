@@ -142,3 +142,20 @@ var Module = function () {
 ```
 
 Used for things that you only need one of. Also see *revealing module* pattern, where you only return a list of method names, but the mthods are defined in the module seperately
+
+### Factory Pattern
+
+* A pattern to simplify object creation.
+* Creating different patterns based on need
+* use cacheing to prevent lots of object instantiation
+
+### singleton
+
+#### Node
+
+* only a single instance of an object across an entire application
+* common.js caches all modules after the first time they are loaded. This means every `require('foo')` will return the exact same object returned
+
+#### Angular
+
+* all services are **singletons**
