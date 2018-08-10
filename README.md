@@ -190,3 +190,22 @@ Used to add new functionality, wihtout being obtrusive.
 * allows extened functionality
 
 This pattern is great because we aren't messing around with the base object/"class". `this` and `call()` are key to this pattern.
+
+### Facade pattern
+
+Used to provide a simplified interface to a complicated system: hide complexity of the backend sub-system.
+
+* example: jQuery - sits on top of the DOM and give a nice, clean, simple interface to dealing with the DOM
+
+The difference with **decoractor pattern** is that we aren't adding functionality - just improving access to current functionality (**wrapper**).
+
+* Goal is not to add functionality, but it is to mask chaos
+* Best practice
+  * buisniess logic seperate from contorller
+  * controll is kept tiny
+
+### Flyweight pattern
+
+Conserve memory by sharing portions of an object between objects.  Good for tasks with non-unique data.  The result is a smaller memory footprint.
+
+* only useful when you have large numbers of objects due to overhead
