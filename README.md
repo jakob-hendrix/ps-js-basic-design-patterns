@@ -159,3 +159,34 @@ Used for things that you only need one of. Also see *revealing module* pattern, 
 #### Angular
 
 * all services are **singletons**
+
+### Summary - Creational Design Patterns
+
+* costructor pattern
+* module pattern - bundle like things
+* factories - factory repo that creates other repositories, to simplify requires
+* singletons - single instance of an object
+
+---
+
+## Structural Design Patterns
+
+Concerned with how objects are compose/made-up.  How to simplify relationship between objects.
+
+* dealt with relationship of jobjects
+  * extend functionality
+    * decorator
+  * simplify functionality
+    * facade
+    * flyweight
+
+### Decorator Pattern
+
+Used to add new functionality, wihtout being obtrusive.
+
+* give more complete inheritance
+* wraps and object
+* protects existing objects
+* allows extened functionality
+
+This pattern is great because we aren't messing around with the base object/"class". `this` and `call()` are key to this pattern.
